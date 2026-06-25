@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "nametag-tracer",
+  "version": "${version}",
+  "name": "Nametag Tracer",
+  "description": "Renders tracers and hitboxes to mobs with nametags",
+  "authors": [
+    "potwvr"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.potwvr.nametag_tracer.NametagTracerClient"
+    ]
+  },
+  "mixins": [
+    "nametag-tracer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=${java_version}"
+  }
+}
